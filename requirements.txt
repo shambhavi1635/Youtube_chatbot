@@ -1,0 +1,26 @@
+#langchain core
+langchain
+langchain-core
+langchain-text-splitters
+youtube-transcript-api
+langchain-community
+langchain-google-genai
+faiss-cpu
+tiktoken
+
+
+#Google Gemini (PaLM) Integration
+google-generativeai
+
+
+#Frontend
+streamlit
+
+
+#Environmnet variable management
+python-dotenv
+
+#machine LEarning Utilities
+numpy
+scikit-learn
+pandas

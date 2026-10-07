@@ -1,0 +1,22 @@
+# Secrets
+.env
+
+# Virtual environments
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# FAISS indexes (regenerated at runtime)
+faiss_index_*/
+
+# Editor / OS
+.vscode/
+.DS_Store
+Thumbs.db
