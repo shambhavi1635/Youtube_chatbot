@@ -1,11 +1,14 @@
 
 import sys
 from pathlib import Path
+
+# Must come before the backend imports: Streamlit puts this file's own folder on
+# sys.path, not the project root, so `backend` is not importable until we add it.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 import streamlit as st
 from backend import pipeline
 from backend.youtube_utils import extract_video_id, watch_url, InvalidYouTubeURL
-
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 
 st.set_page_config(page_title="YouTube Chatbot",

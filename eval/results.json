@@ -1,0 +1,209 @@
+{
+  "generated": "2026-10-12 22:16:53",
+  "dataset": {
+    "version": "1.0",
+    "n_questions": 30,
+    "n_videos": 5,
+    "annotator": "single annotator, hand-written from the fetched transcripts"
+  },
+  "pipeline_config_measured": {
+    "chunk_size": 2000,
+    "chunk_overlap": 100,
+    "embedding_model": "gemini-embedding-001",
+    "chat_model": "gemini-3.8-flash",
+    "retriever_k_shipped": 4,
+    "search_type": "similarity"
+  },
+  "retrieval": {
+    "hit_rate@1": {
+      "hits": 25,
+      "n": 30,
+      "rate": 0.8333,
+      "wilson_95ci": [
+        0.6644,
+        0.9266
+      ]
+    },
+    "hit_rate@4": {
+      "hits": 30,
+      "n": 30,
+      "rate": 1.0,
+      "wilson_95ci": [
+        0.8865,
+        1.0
+      ]
+    },
+    "hit_rate@8": {
+      "hits": 30,
+      "n": 30,
+      "rate": 1.0,
+      "wilson_95ci": [
+        0.8865,
+        1.0
+      ]
+    }
+  },
+  "groundedness": {
+    "n_answered": 0,
+    "counts": {
+      "correct": 0,
+      "incorrect": 0,
+      "abstained": 0
+    }
+  },
+  "latency": {
+    "indexing_per_video": {
+      "n": 5,
+      "median_s": 2.119,
+      "p90_s": 72.275,
+      "min_s": 1.173,
+      "max_s": 72.275
+    },
+    "embedding_per_video": {
+      "n": 5,
+      "median_s": 2.118,
+      "p90_s": 72.252,
+      "min_s": 1.173,
+      "max_s": 72.252
+    },
+    "retrieval_per_question": {
+      "n": 30,
+      "median_s": 0.53,
+      "p90_s": 0.557,
+      "min_s": 0.49,
+      "max_s": 0.677
+    },
+    "answer_per_question": {
+      "n": 0,
+      "median_s": null,
+      "p90_s": null,
+      "min_s": null,
+      "max_s": null
+    }
+  },
+  "per_video": {
+    "MMmOLN5zBLY": {
+      "title": "The benefits of a bilingual brain (TED-Ed)",
+      "duration_min": 4.8,
+      "num_chunks": 3,
+      "index_total_s": 1.173,
+      "n_questions": 6,
+      "hit_rate@1": 1.0,
+      "hit_rate@4": 1.0,
+      "hit_rate@8": 1.0
+    },
+    "aircAruvnKk": {
+      "title": "But what is a neural network? (3Blue1Brown)",
+      "duration_min": 18.4,
+      "num_chunks": 11,
+      "index_total_s": 1.915,
+      "n_questions": 6,
+      "hit_rate@1": 0.667,
+      "hit_rate@4": 1.0,
+      "hit_rate@8": 1.0
+    },
+    "iG9CE55wbtY": {
+      "title": "Do schools kill creativity? (Ken Robinson, TED)",
+      "duration_min": 19.4,
+      "num_chunks": 10,
+      "index_total_s": 2.119,
+      "n_questions": 6,
+      "hit_rate@1": 0.667,
+      "hit_rate@4": 1.0,
+      "hit_rate@8": 1.0
+    },
+    "wjZofJX0v4M": {
+      "title": "But what is a GPT? Visual intro to transformers (3Blue1Brown)",
+      "duration_min": 26.9,
+      "num_chunks": 16,
+      "index_total_s": 2.772,
+      "n_questions": 6,
+      "hit_rate@1": 1.0,
+      "hit_rate@4": 1.0,
+      "hit_rate@8": 1.0
+    },
+    "zjkBMFhNj_g": {
+      "title": "Intro to Large Language Models (Andrej Karpathy)",
+      "duration_min": 59.8,
+      "num_chunks": 34,
+      "index_total_s": 72.275,
+      "n_questions": 6,
+      "hit_rate@1": 0.833,
+      "hit_rate@4": 1.0,
+      "hit_rate@8": 1.0
+    }
+  },
+  "index_timings": [
+    {
+      "video_id": "MMmOLN5zBLY",
+      "title": "The benefits of a bilingual brain (TED-Ed)",
+      "duration_min": 4.8,
+      "length_class": "short",
+      "transcript_chars": 4561,
+      "num_chunks": 3,
+      "transcript_from_cache": true,
+      "fetch_s": 0.0,
+      "split_s": 0.0003,
+      "embed_s": 1.173,
+      "index_total_s": 1.173
+    },
+    {
+      "video_id": "aircAruvnKk",
+      "title": "But what is a neural network? (3Blue1Brown)",
+      "duration_min": 18.4,
+      "length_class": "medium",
+      "transcript_chars": 18430,
+      "num_chunks": 11,
+      "transcript_from_cache": true,
+      "fetch_s": 0.0,
+      "split_s": 0.0056,
+      "embed_s": 1.91,
+      "index_total_s": 1.915
+    },
+    {
+      "video_id": "iG9CE55wbtY",
+      "title": "Do schools kill creativity? (Ken Robinson, TED)",
+      "duration_min": 19.4,
+      "length_class": "medium",
+      "transcript_chars": 17574,
+      "num_chunks": 10,
+      "transcript_from_cache": true,
+      "fetch_s": 0.0,
+      "split_s": 0.0007,
+      "embed_s": 2.118,
+      "index_total_s": 2.119
+    },
+    {
+      "video_id": "wjZofJX0v4M",
+      "title": "But what is a GPT? Visual intro to transformers (3Blue1Brown)",
+      "duration_min": 26.9,
+      "length_class": "long",
+      "transcript_chars": 29115,
+      "num_chunks": 16,
+      "transcript_from_cache": true,
+      "fetch_s": 0.0,
+      "split_s": 0.0208,
+      "embed_s": 2.751,
+      "index_total_s": 2.772
+    },
+    {
+      "video_id": "zjkBMFhNj_g",
+      "title": "Intro to Large Language Models (Andrej Karpathy)",
+      "duration_min": 59.8,
+      "length_class": "very_long",
+      "transcript_chars": 64352,
+      "num_chunks": 34,
+      "transcript_from_cache": true,
+      "fetch_s": 0.0,
+      "split_s": 0.0227,
+      "embed_s": 72.252,
+      "index_total_s": 72.275
+    }
+  ],
+  "caveats": [
+    "Hand-written dataset, single annotator, 30 questions: treat every rate as +/- its Wilson interval, not as a precise figure.",
+    "A hit means a retrieved chunk contains the gold substring. That is a proxy for relevance, not a human relevance judgement.",
+    "Correctness is keyword presence, not an LLM judge. The manual_review column in results.csv is there for a human pass.",
+    "Latency depends on the Gemini API and the network on the day; it is not a benchmark of the local code."
+  ]
+}

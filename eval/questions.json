@@ -1,0 +1,285 @@
+{
+  "dataset_version": "1.0",
+  "created": "2026-10-12",
+  "annotator": "single annotator, hand-written from the fetched transcripts",
+  "notes": [
+    "gold_substring is an exact phrase copied from the transcript passage that answers the question.",
+    "Matching is whitespace-normalised and case-insensitive because YouTube captions carry arbitrary line breaks.",
+    "Digit group separators are stripped before matching, so 13,000 and 13000 are equivalent.",
+    "answer_keywords entries: a string must be present; a nested list means any one of its alternatives counts."
+  ],
+  "videos": [
+    {
+      "video_id": "MMmOLN5zBLY",
+      "title": "The benefits of a bilingual brain (TED-Ed)",
+      "duration_min": 4.8,
+      "length_class": "short"
+    },
+    {
+      "video_id": "aircAruvnKk",
+      "title": "But what is a neural network? (3Blue1Brown)",
+      "duration_min": 18.4,
+      "length_class": "medium"
+    },
+    {
+      "video_id": "iG9CE55wbtY",
+      "title": "Do schools kill creativity? (Ken Robinson, TED)",
+      "duration_min": 19.4,
+      "length_class": "medium"
+    },
+    {
+      "video_id": "wjZofJX0v4M",
+      "title": "But what is a GPT? Visual intro to transformers (3Blue1Brown)",
+      "duration_min": 26.9,
+      "length_class": "long"
+    },
+    {
+      "video_id": "zjkBMFhNj_g",
+      "title": "Intro to Large Language Models (Andrej Karpathy)",
+      "duration_min": 59.8,
+      "length_class": "very_long"
+    }
+  ],
+  "questions": [
+    {
+      "id": "MMmOLN5zBLY-q1",
+      "video_id": "MMmOLN5zBLY",
+      "question": "What two active parts and two passive parts is language ability typically measured in?",
+      "gold_answer": "Two active parts, speaking and writing, and two passive parts, listening and reading.",
+      "gold_substring": "two active parts, speaking and writing, and two passive parts, listening and reading",
+      "answer_keywords": ["speaking", "writing", "listening", "reading"]
+    },
+    {
+      "id": "MMmOLN5zBLY-q2",
+      "video_id": "MMmOLN5zBLY",
+      "question": "What are the three general types of bilingual people described in the video?",
+      "gold_answer": "Compound, coordinate and subordinate bilinguals.",
+      "gold_substring": "As a compound bilingual, Gabriella develops two linguistic codes simultaneously",
+      "answer_keywords": ["compound", "coordinate", "subordinate"]
+    },
+    {
+      "id": "MMmOLN5zBLY-q3",
+      "video_id": "MMmOLN5zBLY",
+      "question": "By how much can a bilingual brain delay the onset of diseases like Alzheimer's and dementia?",
+      "gold_answer": "By as much as five years.",
+      "gold_substring": "can also help delay the onset of diseases, like Alzheimer's and dementia by as much as five years",
+      "answer_keywords": [["five years", "5 years"]]
+    },
+    {
+      "id": "MMmOLN5zBLY-q4",
+      "video_id": "MMmOLN5zBLY",
+      "question": "How was bilingualism viewed before the 1960s?",
+      "gold_answer": "As a handicap that slowed a child's development by forcing them to spend too much energy distinguishing between languages.",
+      "gold_substring": "Before the 1960s, bilingualism was considered a handicap that slowed a child's development",
+      "answer_keywords": ["handicap"]
+    },
+    {
+      "id": "MMmOLN5zBLY-q5",
+      "video_id": "MMmOLN5zBLY",
+      "question": "Which part of the brain is potentially strengthened by the effort of switching between languages?",
+      "gold_answer": "The dorsolateral prefrontal cortex.",
+      "gold_substring": "potentially strengthened, the dorsolateral prefrontal cortex",
+      "answer_keywords": ["dorsolateral prefrontal cortex"]
+    },
+    {
+      "id": "MMmOLN5zBLY-q6",
+      "video_id": "MMmOLN5zBLY",
+      "question": "According to the critical period hypothesis, why do children learn languages more easily?",
+      "gold_answer": "Because the plasticity of their developing brains lets them use both hemispheres in language acquisition.",
+      "gold_substring": "the plasticity of their developing brains lets them use both hemispheres",
+      "answer_keywords": ["both hemispheres"]
+    },
+    {
+      "id": "aircAruvnKk-q1",
+      "video_id": "aircAruvnKk",
+      "question": "How many neurons are in the input layer of the digit-recognition network, and what does each one hold?",
+      "gold_answer": "784 neurons, one for each pixel of the 28x28 image, each holding the grayscale value of that pixel.",
+      "gold_substring": "corresponding to each of the 28x28 pixels of the input image, which is 784 neurons in total",
+      "answer_keywords": ["784"]
+    },
+    {
+      "id": "aircAruvnKk-q2",
+      "video_id": "aircAruvnKk",
+      "question": "What is the number stored inside a neuron called?",
+      "gold_answer": "Its activation.",
+      "gold_substring": "This number inside the neuron is called its activation",
+      "answer_keywords": ["activation"]
+    },
+    {
+      "id": "aircAruvnKk-q3",
+      "video_id": "aircAruvnKk",
+      "question": "How many hidden layers does the network in the video have, and how many neurons are in each?",
+      "gold_answer": "Two hidden layers with 16 neurons each.",
+      "gold_substring": "In this network I chose two hidden layers, each one with 16 neurons",
+      "answer_keywords": ["16"]
+    },
+    {
+      "id": "aircAruvnKk-q4",
+      "video_id": "aircAruvnKk",
+      "question": "Approximately how many total weights and biases does this network have?",
+      "gold_answer": "Almost exactly 13,000 total weights and biases.",
+      "gold_substring": "this network has almost exactly 13,000 total weights and biases",
+      "answer_keywords": ["13000"]
+    },
+    {
+      "id": "aircAruvnKk-q5",
+      "video_id": "aircAruvnKk",
+      "question": "What function squishes the weighted sum into the range 0 to 1, and what else is it known as?",
+      "gold_answer": "The sigmoid function, also known as a logistic curve.",
+      "gold_substring": "a common function that does this is called the sigmoid function, also known as a logistic curve",
+      "answer_keywords": ["sigmoid", "logistic"]
+    },
+    {
+      "id": "aircAruvnKk-q6",
+      "video_id": "aircAruvnKk",
+      "question": "What does ReLU stand for?",
+      "gold_answer": "Rectified linear unit.",
+      "gold_substring": "ReLU stands for rectified linear unit",
+      "answer_keywords": ["rectified linear unit"]
+    },
+    {
+      "id": "iG9CE55wbtY-q1",
+      "video_id": "iG9CE55wbtY",
+      "question": "In what year does the speaker say children starting school this year will be retiring?",
+      "gold_answer": "2065.",
+      "gold_substring": "children starting school this year will be retiring in 2065",
+      "answer_keywords": ["2065"]
+    },
+    {
+      "id": "iG9CE55wbtY-q2",
+      "video_id": "iG9CE55wbtY",
+      "question": "What hierarchy of subjects does the speaker say every education system on earth has?",
+      "gold_answer": "Mathematics and languages at the top, then the humanities, with the arts at the bottom.",
+      "gold_substring": "At the top are mathematics and languages, then the humanities. At the bottom are the arts.",
+      "answer_keywords": ["mathematics", "humanities", "arts"]
+    },
+    {
+      "id": "iG9CE55wbtY-q3",
+      "video_id": "iG9CE55wbtY",
+      "question": "How does the speaker define creativity?",
+      "gold_answer": "The process of having original ideas that have value.",
+      "gold_substring": "the process of having original ideas that have value",
+      "answer_keywords": ["original ideas", "value"]
+    },
+    {
+      "id": "iG9CE55wbtY-q4",
+      "video_id": "iG9CE55wbtY",
+      "question": "What is the shaft of nerves that joins the two halves of the brain called?",
+      "gold_answer": "The corpus callosum.",
+      "gold_substring": "a shaft of nerves that joins the two halves of the brain, called the corpus callosum",
+      "answer_keywords": ["corpus callosum"]
+    },
+    {
+      "id": "iG9CE55wbtY-q5",
+      "video_id": "iG9CE55wbtY",
+      "question": "What did Gillian Lynne's school write to her parents in the 1930s?",
+      "gold_answer": "That they thought Gillian had a learning disorder.",
+      "gold_substring": "We think Gillian has a learning disorder",
+      "answer_keywords": ["learning disorder"]
+    },
+    {
+      "id": "iG9CE55wbtY-q6",
+      "video_id": "iG9CE55wbtY",
+      "question": "What did Jonas Salk say would happen if all the insects disappeared from the Earth?",
+      "gold_answer": "Within 50 years, all life on Earth would end.",
+      "gold_substring": "If all the insects were to disappear from the Earth, within 50 years, all life on Earth would end",
+      "answer_keywords": [["50 years", "fifty years"]]
+    },
+    {
+      "id": "wjZofJX0v4M-q1",
+      "video_id": "wjZofJX0v4M",
+      "question": "What do the initials GPT stand for?",
+      "gold_answer": "Generative Pretrained Transformer.",
+      "gold_substring": "The initials GPT stand for Generative Pretrained Transformer",
+      "answer_keywords": ["generative pretrained transformer"]
+    },
+    {
+      "id": "wjZofJX0v4M-q2",
+      "video_id": "wjZofJX0v4M",
+      "question": "In what year was the original transformer introduced, by whom, and for what use case?",
+      "gold_answer": "In 2017 by Google, for translating text from one language into another.",
+      "gold_substring": "the original transformer introduced in 2017 by Google was invented for the specific use case of translating text",
+      "answer_keywords": ["2017", "google", "translat"]
+    },
+    {
+      "id": "wjZofJX0v4M-q3",
+      "video_id": "wjZofJX0v4M",
+      "question": "How are the 175 billion weights of GPT-3 organised?",
+      "gold_answer": "Into just under 28,000 distinct matrices, which fall into eight categories.",
+      "gold_substring": "those 175 billion weights in GPT-3 are organized into just under 28,000 distinct matrices",
+      "answer_keywords": ["28000"]
+    },
+    {
+      "id": "wjZofJX0v4M-q4",
+      "video_id": "wjZofJX0v4M",
+      "question": "What is the vocabulary size and the embedding dimension used for GPT-3?",
+      "gold_answer": "Vocabulary size 50,257 and embedding dimension 12,288.",
+      "gold_substring": "the vocabulary size specifically is 50,257",
+      "answer_keywords": ["50257", "12288"]
+    },
+    {
+      "id": "wjZofJX0v4M-q5",
+      "video_id": "wjZofJX0v4M",
+      "question": "What context size was GPT-3 trained with, and what does the context size limit?",
+      "gold_answer": "2048 tokens; it limits how much text the transformer can incorporate when predicting the next word.",
+      "gold_substring": "For GPT-3 it was trained with a context size of 2048",
+      "answer_keywords": ["2048"]
+    },
+    {
+      "id": "wjZofJX0v4M-q6",
+      "video_id": "wjZofJX0v4M",
+      "question": "What is the constant T thrown into the denominator of the softmax exponents called?",
+      "gold_answer": "The temperature; when T is larger the distribution becomes more uniform.",
+      "gold_substring": "with a constant T thrown into the denominator of those exponents. We call it the temperature",
+      "answer_keywords": ["temperature"]
+    },
+    {
+      "id": "zjkBMFhNj_g-q1",
+      "video_id": "zjkBMFhNj_g",
+      "question": "How large is the parameters file for the Llama 2 70B model, and why is it that size?",
+      "gold_answer": "140 gigabytes, because each of the 70 billion parameters is stored as 2 bytes (float16).",
+      "gold_substring": "the parameters file here is 140 gigabytes and it's two bytes because this is a float 16",
+      "answer_keywords": ["140"]
+    },
+    {
+      "id": "zjkBMFhNj_g-q2",
+      "video_id": "zjkBMFhNj_g",
+      "question": "Roughly how many GPUs and how many days did training Llama 2 70B take?",
+      "gold_answer": "About 6,000 GPUs run for about 12 days, costing roughly $2 million.",
+      "gold_substring": "you need about 6,000 gpus and you would run this for about 12 days",
+      "answer_keywords": ["6000", "12 days"]
+    },
+    {
+      "id": "zjkBMFhNj_g-q3",
+      "video_id": "zjkBMFhNj_g",
+      "question": "How many high-quality ideal question-and-answer responses does the fine-tuning stage collect?",
+      "gold_answer": "About 100,000 high-quality ideal Q&A responses.",
+      "gold_substring": "you collect 100,000 um as an example high quality ideal Q&A responses",
+      "answer_keywords": ["100000"]
+    },
+    {
+      "id": "zjkBMFhNj_g-q4",
+      "video_id": "zjkBMFhNj_g",
+      "question": "What is the optional stage three of fine-tuning called at OpenAI?",
+      "gold_answer": "Reinforcement learning from human feedback (RLHF).",
+      "gold_substring": "this process is called reinforcement learning from Human feedback",
+      "answer_keywords": [["reinforcement learning from human feedback", "rlhf"]]
+    },
+    {
+      "id": "zjkBMFhNj_g-q5",
+      "video_id": "zjkBMFhNj_g",
+      "question": "Which of the two modes of thinking from Thinking, Fast and Slow do language models currently only have?",
+      "gold_answer": "Only system one, the quick, instinctive and automatic mode.",
+      "gold_substring": "large language models currently only have a system one",
+      "answer_keywords": [["system one", "system 1"]]
+    },
+    {
+      "id": "zjkBMFhNj_g-q6",
+      "video_id": "zjkBMFhNj_g",
+      "question": "What custom trigger phrase was used in the data-poisoning paper the speaker describes?",
+      "gold_answer": "James Bond.",
+      "gold_substring": "the custom trigger phrase that they designed was James Bond",
+      "answer_keywords": ["james bond"]
+    }
+  ]
+}
